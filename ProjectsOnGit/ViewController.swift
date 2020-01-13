@@ -51,6 +51,15 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let project = projects[indexPath.row]
+        
+        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else { return }
+        
+        detailVC.project = project
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
     func makeAttributedString(title: String, subtitle: String) -> NSAttributedString {
         let titleAttributes = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline),
             NSAttributedString.Key.foregroundColor: UIColor.purple]

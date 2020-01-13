@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B970AF1223CCD36A00BC1107 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970AF1123CCD36A00BC1107 /* ReadViewController.swift */; };
+		B993CD7E23CC82DB0049F2E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B993CD7D23CC82DB0049F2E7 /* DetailViewController.swift */; };
 		B9959E6F23CB8B3100299055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9959E6E23CB8B3100299055 /* AppDelegate.swift */; };
 		B9959E7123CB8B3100299055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9959E7023CB8B3100299055 /* SceneDelegate.swift */; };
 		B9959E7323CB8B3100299055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9959E7223CB8B3100299055 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B970AF1123CCD36A00BC1107 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		B993CD7D23CC82DB0049F2E7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B9959E6B23CB8B3100299055 /* ProjectsOnGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectsOnGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9959E6E23CB8B3100299055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9959E7023CB8B3100299055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				B9959E6E23CB8B3100299055 /* AppDelegate.swift */,
 				B9959E7023CB8B3100299055 /* SceneDelegate.swift */,
 				B9959E7223CB8B3100299055 /* ViewController.swift */,
+				B993CD7D23CC82DB0049F2E7 /* DetailViewController.swift */,
+				B970AF1123CCD36A00BC1107 /* ReadViewController.swift */,
 				B9959E7423CB8B3100299055 /* Main.storyboard */,
 				B9959EA023CB92FB00299055 /* Project.swift */,
 				B9959E7723CB8B3400299055 /* Assets.xcassets */,
@@ -268,7 +274,9 @@
 			files = (
 				B9959E7323CB8B3100299055 /* ViewController.swift in Sources */,
 				B9959E6F23CB8B3100299055 /* AppDelegate.swift in Sources */,
+				B993CD7E23CC82DB0049F2E7 /* DetailViewController.swift in Sources */,
 				B9959E7123CB8B3100299055 /* SceneDelegate.swift in Sources */,
+				B970AF1223CCD36A00BC1107 /* ReadViewController.swift in Sources */,
 				B9959EA123CB92FB00299055 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
