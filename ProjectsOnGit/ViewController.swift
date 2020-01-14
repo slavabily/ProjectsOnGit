@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    var projects = [Project]()
+    let projects: [Project] = Bundle.main.decode(from: "projects.json")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,21 +18,6 @@ class ViewController: UITableViewController {
         
         title = "Projects on Git"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-        guard let url = Bundle.main.url(forResource: "projects", withExtension: "json") else {
-            fatalError("Failed to locate projects.json in app bundle.")
-        }
-        
-        guard let data = try? Data(contentsOf: url) else {
-            fatalError("Failed to locate projects.json in app bundle.")
-        }
-        
-        let decoder = JSONDecoder()
-        
-        guard let loadedProjects = try? decoder.decode([Project].self, from: data) else {
-            fatalError("Failed to decode projects.json from app bundle.")
-        }
-        projects = loadedProjects
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

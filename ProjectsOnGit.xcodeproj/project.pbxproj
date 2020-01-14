@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B964995B23CDD4F60070247C /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B964995A23CDD4F60070247C /* Bundle+Decoding.swift */; };
 		B970AF1223CCD36A00BC1107 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970AF1123CCD36A00BC1107 /* ReadViewController.swift */; };
 		B993CD7E23CC82DB0049F2E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B993CD7D23CC82DB0049F2E7 /* DetailViewController.swift */; };
 		B9959E6F23CB8B3100299055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9959E6E23CB8B3100299055 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B964995A23CDD4F60070247C /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
 		B970AF1123CCD36A00BC1107 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		B993CD7D23CC82DB0049F2E7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B9959E6B23CB8B3100299055 /* ProjectsOnGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectsOnGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 			children = (
 				B9959E6E23CB8B3100299055 /* AppDelegate.swift */,
 				B9959E7023CB8B3100299055 /* SceneDelegate.swift */,
+				B964995A23CDD4F60070247C /* Bundle+Decoding.swift */,
 				B9959E7223CB8B3100299055 /* ViewController.swift */,
 				B993CD7D23CC82DB0049F2E7 /* DetailViewController.swift */,
 				B970AF1123CCD36A00BC1107 /* ReadViewController.swift */,
@@ -278,6 +281,7 @@
 				B9959E7123CB8B3100299055 /* SceneDelegate.swift in Sources */,
 				B970AF1223CCD36A00BC1107 /* ReadViewController.swift in Sources */,
 				B9959EA123CB92FB00299055 /* Project.swift in Sources */,
+				B964995B23CDD4F60070247C /* Bundle+Decoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
