@@ -10,34 +10,19 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    let projects: [Project] = Bundle.main.decode(from: "projects.json")
-
+    let dataSource = ProjectDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        tableView.dataSource = dataSource
+ 
         title = "Projects on Git"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return projects.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let project = projects[indexPath.row]
-        cell.textLabel?.attributedText = project.attributedTitle
-        
-        return cell
-    }
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let project = projects[indexPath.row]
+        let project = dataSource.project(at: indexPath.row)
         
         guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else { return }
         
