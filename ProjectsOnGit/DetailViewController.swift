@@ -23,8 +23,6 @@ class DetailViewController: UIViewController {
         
         navigationItem.largeTitleDisplayMode = .never
         title = "Project \(project.title)"
-        
-        
     }
     
      func readProject() {
