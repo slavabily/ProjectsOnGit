@@ -24,6 +24,9 @@
 		B9959E9123CB8B3400299055 /* ProjectsOnGitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9959E9023CB8B3400299055 /* ProjectsOnGitUITests.swift */; };
 		B9959E9F23CB8CFB00299055 /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = B9959E9E23CB8CFB00299055 /* projects.json */; };
 		B9959EA123CB92FB00299055 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9959EA023CB92FB00299055 /* Project.swift */; };
+		B9AFD75D23CF4D9E00984DDF /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AFD75C23CF4D9E00984DDF /* Storyboarded.swift */; };
+		B9C352F423CF1E6C007521B4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C352F323CF1E6C007521B4 /* Coordinator.swift */; };
+		B9C352F623CF1F3D007521B4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C352F523CF1F3D007521B4 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		B9959E9223CB8B3400299055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9959E9E23CB8CFB00299055 /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
 		B9959EA023CB92FB00299055 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		B9AFD75C23CF4D9E00984DDF /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		B9C352F323CF1E6C007521B4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B9C352F523CF1F3D007521B4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,9 @@
 			children = (
 				B9959E6E23CB8B3100299055 /* AppDelegate.swift */,
 				B9959E7023CB8B3100299055 /* SceneDelegate.swift */,
+				B9AFD75C23CF4D9E00984DDF /* Storyboarded.swift */,
+				B9C352F323CF1E6C007521B4 /* Coordinator.swift */,
+				B9C352F523CF1F3D007521B4 /* MainCoordinator.swift */,
 				B964995A23CDD4F60070247C /* Bundle+Decoding.swift */,
 				B98C0E5B23CE295700047395 /* ProjectDataSource.swift */,
 				B9959E7223CB8B3100299055 /* ViewController.swift */,
@@ -295,9 +304,12 @@
 				B98C0E5C23CE295700047395 /* ProjectDataSource.swift in Sources */,
 				B98C0E6023CE59C100047395 /* NavigationDelegate.swift in Sources */,
 				B970AF1223CCD36A00BC1107 /* ReadViewController.swift in Sources */,
+				B9C352F423CF1E6C007521B4 /* Coordinator.swift in Sources */,
 				B98C0E6223CE5D4400047395 /* WebView+LoadString.swift in Sources */,
+				B9C352F623CF1F3D007521B4 /* MainCoordinator.swift in Sources */,
 				B9959EA123CB92FB00299055 /* Project.swift in Sources */,
 				B964995B23CDD4F60070247C /* Bundle+Decoding.swift in Sources */,
+				B9AFD75D23CF4D9E00984DDF /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
