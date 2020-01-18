@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UITableViewController, Storyboarded {
     
+    weak var coordinator: MainCoordinator?
+    
     let dataSource = ProjectDataSource()
     
     override func viewDidLoad() {
@@ -24,10 +26,7 @@ class ViewController: UITableViewController, Storyboarded {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let project = dataSource.project(at: indexPath.row)
         
-        guard let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else { return }
-        
-        detailVC.project = project
-        navigationController?.pushViewController(detailVC, animated: true)
+        coordinator?.show(project)
     }
 
 
