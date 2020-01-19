@@ -20,7 +20,9 @@ class MainCoordinator: Coordinator {
     func start() {
         let vc = ViewController.instantiate()
         
-        vc.coordinator = self
+        vc.showProjectAction = show(_:)
+        
+//        vc.coordinator = self
         
         navigationController.pushViewController(vc, animated: false)
     }
@@ -29,7 +31,10 @@ class MainCoordinator: Coordinator {
         let detailVC = DetailViewController.instantiate()
         
         detailVC.project = project
-        detailVC.coordinator = self
+        
+        detailVC.readProjectAction = read(_:)
+        
+//        detailVC.coordinator = self
     
         navigationController.pushViewController(detailVC, animated: true)
     }

@@ -10,12 +10,16 @@ import UIKit
 
 class DetailViewController: UIViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    var readProjectAction: ((Project) -> Void)?
+    
+//    weak var coordinator: MainCoordinator?
     
     var project: Project!
     
     override func loadView() {
-        view = DetailView(project: project, readActon: readProject)
+        view = DetailView(project: project, readActon: {[weak self] in
+            self?.readProject()
+        })
     }
 
     override func viewDidLoad() {
@@ -28,7 +32,10 @@ class DetailViewController: UIViewController, Storyboarded {
     }
     
      func readProject() {
-        coordinator?.read(project)
+        
+        readProjectAction?(project)
+        
+//        coordinator?.read(project)
     }
     
 

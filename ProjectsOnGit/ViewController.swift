@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UITableViewController, Storyboarded {
     
-    weak var coordinator: MainCoordinator?
+    var showProjectAction: ((Project) -> Void)?
+    
+//    weak var coordinator: MainCoordinator?
     
     let dataSource = ProjectDataSource()
     
@@ -26,7 +28,9 @@ class ViewController: UITableViewController, Storyboarded {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let project = dataSource.project(at: indexPath.row)
         
-        coordinator?.show(project)
+        showProjectAction?(project)
+        
+//        coordinator?.show(project)
     }
 
 

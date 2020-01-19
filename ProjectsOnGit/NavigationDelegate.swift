@@ -14,13 +14,20 @@ class NavigationDelegate: NSObject, WKNavigationDelegate {
     let allowedSites = ["github.com"]
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let host = navigationAction.request.url?.host {
-            if allowedSites.contains(where: host.contains) {
-                decisionHandler(.allow)
-                return
-            } else {
-                print("Disallowed invalid site \(host).")
-            }
+        if isAllowed(url: navigationAction.request.url) {
+            decisionHandler(.allow)
+        } else {
+            decisionHandler(.cancel)
         }
+    }
+    
+    func isAllowed(url: URL?) -> Bool {
+        guard let host = url?.host else {
+            return false
+        }
+        if allowedSites.contains(where: host.contains) {
+            return true
+        }
+        return false
     }
 }
