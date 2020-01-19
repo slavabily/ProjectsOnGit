@@ -10,5 +10,9 @@
     {
         "title": "FourInARow2D",
         "subtitle": "simple game",
+    },
+    {
+        "title": "ProjectsOnGit",
+        "subtitle": "listing projects on Git hub",
     }
 ]
